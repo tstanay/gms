@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>GMS Group</title>
+	<!--.css files -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/_fonts.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+</head>
+<body>
+<div class="modal-backdrop"></div>
+<div class="main-menu clearfix">
+	<a class="close_menu" href="#"></a>
+	<div class="position-menu">
+		<div class="title_menu">меню</div>
+		<nav>
+			<ul class="menu_list">
+				<li><a class="active" href="#">Главная</a></li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="block_lng">
+			<a href="#" class="active_lng">ru</a>
+			<a href="#">en</a>
+		</div>
+		<ul class="list-socialLink">
+			<li><a class="icon-f" href=""></a></li>
+			<li><a class="icon-vk" href=""></a></li>
+			<li><a class="icon-tw" href=""></a></li>
+			<li><a class="icon-ok" href=""></a></li>
+			<li><a class="icon-g" href=""></a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="show_main-menu" id="nav-icon1">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+
+<div id="main-overlay">
+	<div class="flex-container">
+		<div class="flex-slide main-b">
+			<div class="sidebar-collapse">
+				<div class="sidebar-content clearfix">
+					<div class="logo wow fadeInDown animated">
+						<img src="../assets/img/logo.svg" alt="">
+					</div>
+					<div class="title-sidber">галерея</div>
+					<h3>Колледж автомобильного транспорта №9</h3>
+					<p>Колледж автомобильного транспорта расположен на участке 0,43 га в районе Савеловский, ближайшая станция метро – «Дмитровская», выходящего на Вятскую улицу. Колледж рассчитан на 300 учащихся и 40 чеовек обслуживающего персонала и преподавателей. Учебный процесс в колледже организован на основе применения интерактивного обучения – широкоформатного интерактивного комплекса.</p>
+					<a class="btn color__b wow" href="#" style="visibility: visible;">
+						<span>просмотр</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="flex-slide home"></div>
+		<div class="flex-slide about"></div>
+		<div class="flex-slide work"></div>
+		<div class="flex-slide contact"></div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/wow.min.js"></script>
+<script type="text/javascript" src="../assets/js/skrollr.min.js"></script>
+<script type="text/javascript" src="../assets/js/countUp.js"></script>
+<script type="text/javascript" src="../assets/js/slick.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.sldr.js"></script>
+
+<script type="text/javascript" src="../assets/js/custom.js"></script>
+<script type="text/javascript">
+    $( window ).load( function() {
+
+        $( '.sldr' ).each( function() {
+            var th = $( this );
+            th.sldr({
+                focalClass    : 'focalPoint',
+                offset        : th.width() / 2,
+                sldrWidth     : 'responsive',
+                nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+                previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+                selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+                toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+                sldrInit      : sldrInit,
+                sldrStart     : sldrStart,
+                sldrComplete  : sldrComplete,
+                sldrLoaded    : sldrLoaded,
+                sldrAuto      : true,
+                sldrTime      : 2000,
+                hasChange     : true
+            });
+        });
+
+    });
+</script>
+</body>
+</html>
